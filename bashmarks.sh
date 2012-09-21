@@ -73,4 +73,7 @@ _go_complete(){
   cat $bookmarks_file | cut -d\| -f2 | grep "$2.*"
 }
 
-complete -C _go_complete -o default go 
+# complete -C _go_complete -o default go 
+alias b='bookmark'
+alias bs='bookmarksshow'
+
